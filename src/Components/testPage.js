@@ -62,7 +62,7 @@ function TestPage(){
             });
         },1000)
         return ()=>clearInterval(timer);
-    },[ ]);
+    },[]);
 
     const handleOptionChange = (questionIndex, option) => {
       setSelectedOptions({ ...selectedOptions, [questionIndex]: option });

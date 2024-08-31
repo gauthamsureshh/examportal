@@ -25,7 +25,7 @@ function ResultPage(){
       if(user===0){
         navigate('/');
       }
-    },[ ])
+    },[])
 
     //format time in MM:SS
     const formatTime = (time) => {

@@ -12,16 +12,16 @@ function Footer(){
             <p>Powered by Quinoid Business Solutions</p>
           </div>
           <div className="social-media">
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=61555845751587">
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
-            <a href="#" >
+            <a href="https://www.facebook.com/profile.php?id=61555845751587" >
               <FontAwesomeIcon icon={faYoutube} size="2x" />
             </a>
-            <a href="#" >
+            <a href="https://www.facebook.com/profile.php?id=61555845751587" >
               <FontAwesomeIcon icon={faInstagram} size="2x" />
             </a>
-            <a href="#" >
+            <a href="https://www.facebook.com/profile.php?id=61555845751587" >
               <FontAwesomeIcon icon={faXTwitter} size="2x" />
             </a>
           </div>
