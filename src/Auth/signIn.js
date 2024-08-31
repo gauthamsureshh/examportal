@@ -51,7 +51,7 @@ function Login(){
         e.preventDefault();
         const existingUsers = JSON.parse(localStorage.getItem('users')) || []; // fetches existing user from local storage.
         const user = existingUsers.find(user => user.email === email && user.password === password);// checks if such an user exists in local storage.
-        if(user || email === 'testuser@gmail.com' && password === 'testuser@2021'){
+        if(user){
             dispatch(testCategory(category));
             dispatch(User(1));
             navigate('testpage');
