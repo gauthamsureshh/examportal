@@ -48,6 +48,11 @@ function TestPage(){
         return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     };
 
+     //function to handle timeout
+     const handleTimeOut=()=>{
+      handleSubmission(); // redirect to result page when timed out
+    } 
+
     //timer countdown
     useEffect(()=>{
         const timer = setInterval(()=>{
@@ -113,10 +118,7 @@ function TestPage(){
       setIsModalOpen(false);
     };
 
-    //function to handle timeout
-    const handleTimeOut=()=>{
-      handleSubmission(); // redirect to result page when timed out
-    } 
+   
 
     const nextQuestion=()=>{
         if(questionIndex < questions.length - 1){
