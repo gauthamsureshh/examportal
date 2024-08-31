@@ -26,7 +26,7 @@ function TestPage(){
       if(user===0){
         navigate('/');
       }
-    },[ ])
+    },[user, navigate])
     useEffect(() => {
       const handlePopstate = (event) => {
         window.history.pushState(null, null, window.top.location.pathname + window.top.location.search);
@@ -62,7 +62,7 @@ function TestPage(){
             });
         },1000)
         return ()=>clearInterval(timer);
-    },[]);
+    },[handleTimeOut]);
 
     const handleOptionChange = (questionIndex, option) => {
       setSelectedOptions({ ...selectedOptions, [questionIndex]: option });
